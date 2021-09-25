@@ -1,7 +1,8 @@
-package com.home.albums
+package com.home.albums.presentation
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.home.albums.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
