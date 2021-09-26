@@ -20,7 +20,7 @@ class AlbumListViewModel(
 
     fun getAlbums() {
         coroutineScope.launch {
-            val listOfAlbums = useCases.getAllAlbums()
+            val listOfAlbums: List<Album> = useCases.getAllAlbums() ?: emptyList()
             albums.postValue(listOfAlbums)
         }
     }

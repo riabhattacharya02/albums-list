@@ -9,7 +9,7 @@ class AlbumServiceDataSource: AlbumDataSource {
     // store locally within the app
     private var listOfAlbums: List<Album> = emptyList()
 
-    override suspend fun getAllAlbums(): List<Album> {
+    override suspend fun getAllAlbums(): List<Album>? {
         if(listOfAlbums.isEmpty()) {
             listOfAlbums = albumService.getListOfAlbums()
         }
